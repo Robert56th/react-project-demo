@@ -1,13 +1,10 @@
-import Navbar from "./Navbar";
-import GameInfo from "./GameInfo";
+import GameCatalog from "./GameCat";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <div className="content">
-        <GameInfo/>
-      </div>
+      <label>Home</label>
+      <a href= "/">Create your own catalogue</a>
     </div>
   );
 }

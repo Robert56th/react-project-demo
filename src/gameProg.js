@@ -1,15 +1,20 @@
 const GameProgress = () => {
     return ( 
         <gp className="gameprogress">
-            <h2>Progress</h2>
-            <input type="checkbox"></input>
-            <div>Unfinished</div>
-            <input type="checkbox"></input>
-            <div>Beaten</div>
-            <input type="checkbox"></input>
-            <div>Completed</div>
-            <input type="checkbox"></input>
-            <div>Unplayed</div>
+            <h3>Progress</h3>
+            <div className="checkboxContainer">
+                <input type="checkbox"></input>
+                <label>Unfinished</label>
+
+                <input type="checkbox"></input>
+                <label>Beaten</label>
+                
+                <input type="checkbox"></input>
+                <label>Completed</label>
+                
+                <input type="checkbox"></input>
+                <label>Unplayed</label>
+            </div>
         </gp>
      );
 }
