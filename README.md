@@ -1,6 +1,5 @@
 Branch name: Doroteo
-Sir pang graduation lang po :<
-![alt text](https://sd.keepcalms.com/i-w600/onegai-onegai-onegai.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
