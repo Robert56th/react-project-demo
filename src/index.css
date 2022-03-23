@@ -28,10 +28,18 @@
 .navbar a:hover {
   color: #f1356d;
 }
-.content {
-  max-width: 900px;
-  margin: 40px auto;
+.gamecatalog .content {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  
+}
+.gameprogress .progress{
+  border: 2px dotted #2e2e2e;
+  border-radius: 20px;
   padding: 20px;
+  margin: 20px auto;
+  
 }
 .gameprogress h3 {
   margin-top: 10px;
@@ -46,6 +54,12 @@
   width: 20px;
 }
 
+.gameinfo .labelContainer{
+  border: 2px dotted #2e2e2e;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px ;
+}
 .gameinfo h3 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -65,6 +79,6 @@
   color: #f2f2f2;
   font-size: small;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 15px;
   border-width: 0px;
 }

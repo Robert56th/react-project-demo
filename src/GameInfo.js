@@ -4,10 +4,10 @@ const GameInfo = () => {
         <gi className="gameinfo">
             <div className="labelContainer">
                 <h3>Game Name</h3>
+                <input type="text"></input>
+                <button>Submit</button>
             </div>
-            <input type="text"></input>
-            <button>Submit</button>
-            
+             
         </gi>
      );
 }
