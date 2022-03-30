@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Branch Name: Deveraturda
+=======
+Branch name: Main
+>>>>>>> main
 
 # Getting Started with Create React App
 
