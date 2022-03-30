@@ -2,6 +2,7 @@ import GameCatalog from "./GameCat";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import SignIn from "./SignIn";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/create" element={<GameCatalog/>}/>
+          {/* <Route exact path="/SignIn" element={<SignIn/>}/> */}
+          <Route exact path="/Create" element = {<GameCatalog/>}/>
         </Routes>
       </div>
     </Router>
