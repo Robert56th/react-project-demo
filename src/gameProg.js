@@ -1,6 +1,6 @@
-const GameProgress = () => {
+const GameProg = () => {
     return ( 
-        <gp className="gameprogress">
+        <gp className='gameprogress'>
             <div className="progress">
                 <h3>Progress</h3>
                 <div>
@@ -21,4 +21,4 @@ const GameProgress = () => {
      );
 }
  
-export default GameProgress;
+export default GameProg;

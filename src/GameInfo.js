@@ -1,14 +1,14 @@
+import { FaTimes} from 'react-icons/fa'
 
-const GameInfo = () => {
+const GameInfo = ({ game, onDelete }) => {
     return ( 
-        <gi className="gameinfo">
-            <div className="labelContainer">
-                <h3>Game Name</h3>
-                <input type="text"></input>
-                <button>Submit</button>
-            </div>
-             
-        </gi>
+        <div className='games'>
+            <h3>{game.text} <FaTimes style={{color: 
+            'red', cursor: 'pointer'}}
+            onClick={() => onDelete(game.id)} ></FaTimes>
+            </h3>
+        </div>
+
      );
 }
  
