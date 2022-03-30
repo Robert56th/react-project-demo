@@ -28,22 +28,42 @@
 .navbar a:hover {
   color: #f1356d;
 }
-.gamecatalog .content {
-  max-width: 1000px;
+.gamecatalog{
+  display: flex;
+  align-items: flex-start;
+
+}
+.gamecatalog .leftcontent {
+  
+  background-color: #8c5faa;
+  border-radius: 20px;
   margin: 20px auto;
-  padding: 10px;
+  padding: 40px;  
+  width: 1000px;
+  height: 750px;
   
 }
+.gamecatalog .rightcontent {
+
+  margin: 20px auto;
+  padding: 40px;
+}
 .gameprogress .progress{
-  border: 2px dotted #2e2e2e;
   border-radius: 20px;
   padding: 20px;
   margin: 20px auto;
+  background-color: #d6b5ec;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
   
 }
 .gameprogress h3 {
   margin-top: 10px;
   margin-bottom: 20px;
+  color: #f2f2f2;
 }
 .gameprogress label {
   margin-right: 40px;
@@ -55,14 +75,16 @@
 }
 
 .gameinfo .labelContainer{
-  border: 2px dotted #2e2e2e;
+  
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 40px ;
+  background-color: #e2d0ee;
 }
 .gameinfo h3 {
   margin-top: 10px;
   margin-bottom: 10px;
+  color: #f2f2f2;
 }
 .gameinfo input {
   margin-right: 10px;
@@ -75,8 +97,8 @@
 .gameinfo button {
   height: 40px;
   width: 80px;
-  background-color: #a635f1;
-  color: #f2f2f2;
+  background-color: #f7f7f7;
+  color: #000000;
   font-size: small;
   font-weight: bold;
   border-radius: 15px;
@@ -97,4 +119,8 @@
 .signin .label {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.listofgames h2{
+  margin: 20px;
 }

@@ -11,7 +11,8 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/SignIn" element={<SignIn/>}/>
+          {/* <Route exact path="/SignIn" element={<SignIn/>}/> */}
+          <Route exact path="/Create" element = {<GameCatalog/>}/>
         </Routes>
       </div>
     </Router>
