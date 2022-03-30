@@ -1,13 +1,126 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #a635f1;
+  font-size:xx-large;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.gamecatalog{
+  display: flex;
+  align-items: flex-start;
+
+}
+.gamecatalog .leftcontent {
+  
+  background-color: #8c5faa;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 40px;  
+  width: 1000px;
+  height: 750px;
+  
+}
+.gamecatalog .rightcontent {
+
+  margin: 20px auto;
+  padding: 40px;
+}
+.gameprogress .progress{
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #d6b5ec;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  
+}
+.gameprogress h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+}
+.gameprogress label {
+  margin-right: 40px;
+  margin-left: 10px;
+}
+.gameprogress input {
+  height: 20px;
+  width: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.gameinfo .labelContainer{
+  
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px ;
+  background-color: #e2d0ee;
+}
+.gameinfo h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #f2f2f2;
+}
+.gameinfo input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-width: 0.5px;
+  height: 30px;
+  width: 550px;
+}
+.gameinfo button {
+  height: 40px;
+  width: 80px;
+  background-color: #f7f7f7;
+  color: #000000;
+  font-size: small;
+  font-weight: bold;
+  border-radius: 15px;
+  border-width: 0px;
+}
+
+.signin .content {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 2px dotted #2e2e2e;
+  border-radius: 20px;
+}
+.signin h1 {
+  color: #7a26b3;
+  font-size:xx-large;
+}
+.signin .label {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.listofgames h2{
+  margin: 20px;
 }
