@@ -10,17 +10,20 @@ function App() {
     {
         id: 1,
         text: 'game1',
+        progress: 'Completed'
     },
     {
         id: 2,
         text: 'game2',
+        progress: 'Unplayed'
     },    
   ])
 
   const addGame = (game) => {
-    const id = () => games.length + 1
+    const id = games.length + 1
     const newGame = {id, ...game}
     setGames([...games, newGame])
+    console.log(game)
   }
 
   const deleteGame = (id) => {

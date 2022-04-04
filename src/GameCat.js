@@ -5,18 +5,31 @@ import { useState } from 'react'
 
 const GameCatalog = ({ games, onAdd, onDelete }) => {
   const [text, setText] = useState('')
+  const [progress, setProgress] = useState()
+
+  const toggleProgress = e => {
+    const target = e.target;
+    if(target.checked) {
+      setProgress(target.value);
+    }
+ };
 
   const onSubmit = (e) => {
     e.preventDefault()
 
     if(!text) {
-        alert('Please add game')
-        return
+      alert('Please add game')
+      return
+    }
+    else if(!progress) {
+      alert('Please choose an option')
+      return
     }
 
-    onAdd({ text })
+    onAdd({ text, progress })
 
     setText('')
+    setProgress('')
   }
 
     return (
@@ -31,11 +44,12 @@ const GameCatalog = ({ games, onAdd, onDelete }) => {
           </div>
           
           <div className="rightcontent">
-            <GameProgress />
+            <GameProgress progress={progress} toggleProgress={toggleProgress}/>
           </div>
 
           <div className="leftcontent">
             <h1>List of Games</h1>
+            <br></br>
             <ListofGames />
             
             {games.map((game) => (
