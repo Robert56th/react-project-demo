@@ -35,19 +35,22 @@ const GameCatalog = ({ games, onAdd, onDelete }) => {
     return (
       <form className="add-form" onSubmit={onSubmit}>
         <div className="gamecatalog">
-          <div className="gameinfo">
-            <h3>Game Name</h3>
-            <input type="text" placeholder='Add game' value={text}
-            onChange={(e) => setText(e.target.value)}>
-            </input>
-            <button type="submit" value='Add game'>Submit</button>
-          </div>
           
-          <div className="rightcontent">
+          
+          <div className="leftcontent">
+            <div className="gameinfo">
+              <h3>Game Name</h3>
+              <input type="text" placeholder='Add game' value={text}
+              onChange={(e) => setText(e.target.value)}>
+              </input>
+              <button type="submit" value='Add game'>Submit</button>
+            </div>
+            
             <GameProgress progress={progress} toggleProgress={toggleProgress}/>
+        
           </div>
 
-          <div className="leftcontent">
+          <div className="rightcontent">
             <h1>List of Games</h1>
             <br></br>
             <ListofGames />

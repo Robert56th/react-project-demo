@@ -33,9 +33,10 @@
 .gamecatalog{
   display: flex;
   align-items: flex-start;
+  
 
 }
-.gamecatalog .leftcontent {
+.gamecatalog .rightcontent{
   
   background-color: #8c5faa;
   border-radius: 20px;
@@ -44,11 +45,13 @@
   width: 1000px;
   height: 750px;
   
+  
 }
-.gamecatalog .rightcontent {
-
+.gamecatalog .leftcontent {
+  
   margin: 20px auto;
   padding: 40px;
+  
 }
 .gameprogress .progress{
   border-radius: 20px;
@@ -76,7 +79,8 @@
   width: 20px;
 }
 
-.gameinfo .labelContainer{
+
+.gameinfo {
   
   border-radius: 20px;
   padding: 20px;
