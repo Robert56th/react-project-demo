@@ -3,6 +3,7 @@ import Home from "./Home";
 import SignIn from "./SignIn";
 import GameCatalog from "./GameCat";
 import { useState } from "react"
+import { v4 as uuid } from 'uuid'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -20,15 +21,16 @@ function App() {
   ])
 
   const addGame = (game) => {
-    const id = games.length + 1
+    const id = uuid();
     const newGame = {id, ...game}
     setGames([...games, newGame])
-    console.log(game)
   }
 
   const deleteGame = (id) => {
     setGames(games.filter((game) => game.id !== id))
   }
+
+  console.log(games)
 
   return (
     <Router>
