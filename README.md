@@ -1,4 +1,4 @@
-Branch name: Main
+Branch Name: main
 
 # Getting Started with Create React App
 
