@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 /* base styles */
 * {
   margin: 0;
@@ -15,7 +15,7 @@
 }
 .navbar h1 {
   color: #a635f1;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 .navbar .links {
   margin-left: auto;
@@ -28,27 +28,23 @@
 .navbar a:hover {
   color: #f1356d;
 }
-.gamecatalog{
+.gamecatalog {
   display: flex;
   align-items: flex-start;
-
 }
 .gamecatalog .leftcontent {
-  
   background-color: #8c5faa;
   border-radius: 20px;
   margin: 20px auto;
-  padding: 40px;  
+  padding: 40px;
   width: 1000px;
   height: 750px;
-  
 }
 .gamecatalog .rightcontent {
-
   margin: 20px auto;
   padding: 40px;
 }
-.gameprogress .progress{
+.gameprogress .progress {
   border-radius: 20px;
   padding: 20px;
   margin: 20px auto;
@@ -57,8 +53,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-
-  
 }
 .gameprogress h3 {
   margin-top: 10px;
@@ -74,11 +68,10 @@
   width: 20px;
 }
 
-.gameinfo .labelContainer{
-  
+.gameinfo .labelContainer {
   border-radius: 20px;
   padding: 20px;
-  margin-bottom: 40px ;
+  margin-bottom: 40px;
   background-color: #e2d0ee;
 }
 .gameinfo h3 {
@@ -114,13 +107,69 @@
 }
 .signin h1 {
   color: #7a26b3;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 .signin .label {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.listofgames h2{
+.listofgames h2 {
   margin: 20px;
+}
+
+.homepage-parent {
+  display: grid;
+  place-items: center;
+}
+
+.homepage {
+  /* background-color: aquamarine; */
+  height: 800px;
+  width: 1000px;
+
+  max-width: 100%;
+
+  display: grid;
+  grid-template: 1fr 2fr 3fr / 3fr 2fr;
+  gap: 10px;
+  grid-template-areas:
+    "welcome welcome"
+    "content1 content3"
+    "content2 content3";
+}
+
+.welcome {
+  background-color: coral;
+  grid-area: welcome;
+}
+
+.content1 {
+  background-color: darkseagreen;
+  grid-area: content1;
+}
+
+.content2 {
+  background-color: limegreen;
+  grid-area: content2;
+}
+
+.content3 {
+  background-color: silver;
+  grid-area: content3;
+}
+
+@media only screen and (max-width: 1000px) {
+  .homepage {
+    height: 120vh;
+    width: 100vw;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 4fr 5fr 6fr;
+    grid-template-areas:
+      "welcome"
+      "content1"
+      "content2"
+      "content3";
+  }
 }
