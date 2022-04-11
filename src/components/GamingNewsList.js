@@ -18,7 +18,7 @@ const GamingNewsList = () => {
   }, []);
   return (
     <div>
-      {articles.slice(0, 7).map((article) => {
+      {articles.slice(0, 8).map((article) => {
         return <GamingNewsItem title={article.title} url={article.link} />;
       })}
     </div>

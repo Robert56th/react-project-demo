@@ -29,7 +29,7 @@ const Home = () => {
           <div className="square-title">
             <h2>Adding Games is Very Easy!</h2>
           </div>
-          <img className="homepage-image" src={imagecontent2} alt="" />
+          <img className="homepage-bottom-image" src={imagecontent2} alt="" />
         </div>
 
         <div className="content3">
