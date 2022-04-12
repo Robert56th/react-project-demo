@@ -36,7 +36,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/home" element={<Home/>}/>
-
+          <Route exact path="" element={<Home/>}/>
           <Route exact path="/create" element={<GameCatalog 
           games={games} onAdd={addGame} onDelete={deleteGame} />}/>
 
