@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
 /* base styles */
 * {
   margin: 0;
@@ -32,7 +34,7 @@
   display: flex;
   align-items: flex-start;
 }
-.gamecatalog .leftcontent {
+.gamecatalog .rightcontent {
   background-color: #8c5faa;
   border-radius: 20px;
   margin: 20px auto;
@@ -40,7 +42,7 @@
   width: 1000px;
   height: 750px;
 }
-.gamecatalog .rightcontent {
+.gamecatalog .leftcontent {
   margin: 20px auto;
   padding: 40px;
 }
@@ -68,7 +70,7 @@
   width: 20px;
 }
 
-.gameinfo .labelContainer {
+.gameinfo {
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 40px;
