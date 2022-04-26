@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
 import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 import GameCatalog from "./GameCat";
 import { useState } from "react";
 import {
@@ -55,6 +56,7 @@ function App() {
           />
 
           <Route exact path="/signin" element={<SignIn />} />
+          <Route exact path="/signup" element={<SignUp />} />
           <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
       </div>

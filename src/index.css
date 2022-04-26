@@ -187,6 +187,10 @@ img.homepage-bottom-image {
   color: white;
 }
 
+.content1 a {
+  color: #ffbb00;
+}
+
 .square-start-button {
   display: inline-block;
   width: 90%;
