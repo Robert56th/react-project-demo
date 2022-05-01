@@ -21,7 +21,9 @@ const Home = () => {
           <h3>{"\u2B24"} Become a member!</h3>
           <h3>{"\u2B24"} Join Us Now!</h3>
           <div className="square-start-button">
-            <h2>Press Start to Continue!</h2>
+            <h2>
+              Press <a href="/signup"> Start</a> to Continue!
+            </h2>
           </div>
         </div>
 
