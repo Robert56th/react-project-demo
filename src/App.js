@@ -3,53 +3,53 @@ import Home from "./Home";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import GameCatalog from "./GameCat";
-<<<<<<< HEAD
-import { useState } from "react"
-import { v4 as uuid } from 'uuid'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-=======
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Navigate,
 } from "react-router-dom";
->>>>>>> main
 
 function App() {
-  const [games, setGames] = useState([
-    {
-      id: 1,
-      text: "game1",
-      progress: "Completed",
-    },
-    {
-      id: 2,
-      text: "game2",
-      progress: "Unplayed",
-    },
-  ]);
+  const [games, setGames] = useState([]);
 
-  const addGame = (game) => {
-<<<<<<< HEAD
-    const id = uuid();
-    const newGame = {id, ...game}
-    setGames([...games, newGame])
+  useEffect(() => {
+    const getGames = async () => {
+      const gamesFromServer = await fetchGames()
+      setGames(gamesFromServer)
+    }
+
+    getGames()
+  }, [])
+
+  const fetchGames = async () => {
+    const res = await fetch('http://localhost:5000/games')
+    const data = await res.json()
+  
+    console.log(data)
+    return data
   }
-=======
-    const id = games.length + 1;
-    const newGame = { id, ...game };
-    setGames([...games, newGame]);
-    console.log(game);
-  };
->>>>>>> main
 
-  const deleteGame = (id) => {
+  const addGame = async (game) => {
+    const res = await fetch('http://localhost:5000/games', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(game)
+    })
+    const data = await res.json()
+    setGames([...games, data])
+  };
+
+  const deleteGame = async (id) => {
+    await fetch(`http://localhost:5000/games/${id}`, {
+      method: 'DELETE'
+    })
+    
     setGames(games.filter((game) => game.id !== id));
   };
-
-  console.log(games)
 
   return (
     <Router>
